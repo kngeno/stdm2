@@ -28,16 +28,16 @@ import configparser
 import subprocess
 
 # Import the PyQt and QGIS libraries
-from PyQt5.QtCore import QFileInfo, QUrl, QFile, QDir, QSettings
-from PyQt5.QtWidgets import QAction, QFileDialog, QMessageBox
+# from PyQt5.QtCore import QFileInfo, QUrl, QFile, QDir, QSettings
+# from PyQt5.QtWidgets import QAction, QFileDialog, QMessageBox
 
-from PyQt5.QtGui import (
-    QIcon,
-    QDesktopServices,
-    QStandardItemModel,
-    QStandardItem,
-)
-from qgis.core import QgsApplication
+# from PyQt5.QtGui import (
+#     QIcon,
+#     QDesktopServices,
+#     QStandardItemModel,
+#     QStandardItem,
+# )
+# from qgis.core import QgsApplication
 
 # Initialize Qt resources from file resources.py
 # Do not remove this import even though your IDE / pylint may report it unused
