@@ -1,13 +1,10 @@
 .. _desktop_introduction:
 
-Desktop API 
-================================
-
+STDM Desktop
+=================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-   desktop-apps
+   desktop-app
    desktop-core
-   desktop-gui

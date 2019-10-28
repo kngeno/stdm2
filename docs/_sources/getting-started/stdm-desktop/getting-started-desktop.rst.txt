@@ -1,0 +1,10 @@
+.. _doc_getting-started-desktop:
+
+STDM Desktop
+===============================
+
+.. toctree::
+   :maxdepth: 1
+   :name: getting-started-desktop
+
+   getting-started-installation-stdm-desktop

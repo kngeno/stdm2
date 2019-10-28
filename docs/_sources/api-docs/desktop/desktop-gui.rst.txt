@@ -2,3 +2,10 @@
 
 GUI Modules
 ================================
+
+
+.. toctree::
+   :maxdepth: 4
+   :caption: gui:
+
+   stdm.gui

@@ -1,4 +1,13 @@
 .. _doc_getting_started_tutorial:
 
+
 Tutorials
-===========
+===============================
+
+.. toctree::
+   :maxdepth: 3
+   :name: getting_started_tutorial
+
+   stdm-desktop/getting-started-tutorials-stdm-desktop   
+   stdm-mobile/getting-started-tutorials-stdm-mobile
+   stdm-online/getting-started-tutorials-stdm-online

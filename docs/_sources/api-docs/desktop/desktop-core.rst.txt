@@ -2,3 +2,10 @@
 
 Core Modules
 ================================
+
+
+.. toctree::
+   :maxdepth: 4
+   :caption: core:
+
+   stdm.core

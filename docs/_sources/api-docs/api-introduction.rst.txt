@@ -1,10 +1,13 @@
 .. _doc_api_introduction:
 
-Introduction
-=============
+
+API
+=================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 3
+   :name: api_introduction
 
    desktop/desktop-introduction
+   mobile/mobile-introduction
+   online/online-introduction

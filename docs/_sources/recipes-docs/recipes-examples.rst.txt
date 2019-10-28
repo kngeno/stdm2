@@ -1,10 +1,10 @@
 .. _doc_recipes_examples:
 
-Examples
+Recipes Examples
 ===============================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :name: recipes-examples
 
 

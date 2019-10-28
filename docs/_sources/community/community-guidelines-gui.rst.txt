@@ -1,0 +1,42 @@
+.. _doc_community_guidelines_gui:
+
+GUI Guidelines
+========================
+
+In order for all graphical user interface elements to appear consistent and to all the user to instinctively use dialogs,
+it is important that the following guidelines are followed in layout and design of GUIs.
+
+* Separate advanced options from basic ones:
+
+* Keep harmful actions away from harmless ones. For example if you have actions for ‘delete’, ‘remove’ etc, try to impose adequate space.
+
+* Don’t add options for the sake of having lots of options. Strive to keep the user interface minimalistic and use sensible defaults.
+
+* Use consistent iconography.
+
+* Capitalise first letter only in labels, tool tips, descriptive text, and other non-heading or title text.
+
+* Capitalize all words in:
+
+    - Titles (group box, tab, list view columns, and so on)
+    - Functions (menu items, buttons), 
+    - Selectable items (combobox items, listbox items, tree list items, and so on)
+    - Capitalize allwords, except prepositions that are shorter than five letters (for example, ‘with’ but ‘Without’), conjunctions(for example, and, or, but), and articles (a, an, the).
+
+* Try to avoid technical terms and rather use a laymans equivalent e.g.  use the word ‘Opacity’ rather than‘Alpha Channel’ (contrived example), ‘Text’ instead of ‘String’ and so on.
+
+* Each window should be focused on a single task.
+
+* Each window should be titled with a concise and explicit statement of its primary task. This can be a direct instruction or a question you want the user to answer.
+
+* The title of the window should not be allowed to scroll off.
+
+* Make the window's contents suit the task
+
+* Provide a clear exit from the window
+
+
+References:
+
+- `QGIS Human Interface Guidelines <https://docs.qgis.org/testing/en/docs/developers_guide/hig.html/>`_
+- `Microsft Inductive User Interface <https://docs.microsoft.com/en-us/windows/win32/appuistart/inductive-user-interface/>`_

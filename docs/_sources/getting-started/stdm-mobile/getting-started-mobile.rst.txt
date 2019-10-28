@@ -1,0 +1,10 @@
+.. _doc_getting-started-mobile:
+
+STDM Mobile
+===============================
+
+.. toctree::
+   :maxdepth: 2
+   :name: getting-started-mobile
+
+   getting-started-installation-stdm-mobile
