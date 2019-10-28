@@ -1,11 +1,14 @@
 .. _doc_unittests_examples:
 
-Examples
+Unittest Examples
 ===============================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :name: unittests-examples
+   
+   unittests-docs/unittest-autodoc
+
 
 * A script to test STDM module:
 

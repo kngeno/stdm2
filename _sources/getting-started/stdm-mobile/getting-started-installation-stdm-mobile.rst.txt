@@ -1,0 +1,9 @@
+.. _doc_getting_started_mobile:
+
+
+Prerequisites
+-------------------------------------
+
+
+Installation
+-------------------------------------

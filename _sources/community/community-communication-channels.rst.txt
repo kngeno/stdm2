@@ -1,4 +1,4 @@
-.. _doc_community_communication-channels:
+.. _doc_community_communication_channels:
 
 Communication Channels
 ========================

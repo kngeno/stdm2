@@ -1,0 +1,10 @@
+.. _doc_getting-started-online:
+
+STDM online
+===============================
+
+.. toctree::
+   :maxdepth: 2
+   :name: getting-started-online
+
+   getting-started-installation-stdm-online

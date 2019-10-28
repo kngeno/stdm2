@@ -1,8 +1,8 @@
-stdm package
-============
+STDM Desktop
+=================================
 
-Subpackages
------------
+Sub Packages
+---------------------------------
 
 .. toctree::
 
@@ -11,21 +11,13 @@ Subpackages
     stdm.gui
     stdm.tests
 
-Submodules
-----------
+Sub Modules
+----------------------------------
 
 stdm.plugin module
-------------------
+----------------------------------
 
 .. automodule:: stdm.plugin
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-stdm.resources module
----------------------
-
-.. automodule:: stdm.resources
     :members:
     :undoc-members:
     :show-inheritance:

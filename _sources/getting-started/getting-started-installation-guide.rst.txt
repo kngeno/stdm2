@@ -1,4 +1,11 @@
-.. _doc_getting_started_installation:
 
 Installation
-==================
+===============================
+
+.. toctree::
+   :maxdepth: 3
+   :name: getting-started-installation-guide 
+
+   stdm-desktop/getting-started-desktop
+   stdm-mobile/getting-started-mobile
+   stdm-online/getting-started-online
