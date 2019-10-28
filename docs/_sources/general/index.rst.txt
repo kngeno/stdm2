@@ -22,7 +22,7 @@ Architecture
 =================================
 
 
-.. image:: _static/images/system_architecture.png
+.. image:: ../_static/images/system_architecture.png
    :width: 80%
    :alt: STDM 2.0 System Architecture
 
