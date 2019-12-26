@@ -153,10 +153,13 @@ See also: `Modifying an inactive pull request locally <https://help.github.com/a
 
 When writing GitHub pull requests, try to keep titles short but descriptive.
 For example:
-| **For bug #411: "STDM hangs if an exception raises in start_requests"**
-prefer **"Fix hanging when exception occurs in start_requests (#411)"**
-instead of **"Fix for #411"**. 
-| Complete titles make it easy to skim through the issue tracker.
+
+
+  For bug **#411: "STDM hangs if an exception raises in start_requests"**
+  prefer **"Fix hanging when exception occurs in start_requests (#411)"**
+  instead of **"Fix for #411"**. 
+
+Complete titles make it easy to skim through the issue tracker.
 
 Finally, try to keep aesthetic changes (:pep:`8` compliance, unused imports
 removal, etc) in separate commits from functional changes. This will make pull

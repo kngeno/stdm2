@@ -1,0 +1,24 @@
+.. _doc_introduction_desktop_archtecture:
+
+Architecture
+=================================
+
+
+.. image:: ../../_static/images/desktop_architecture.png
+   :width: 80%
+   :alt: STDM 2.0 Desktop Architecture
+
+
+Description
+=================================
+
+The STDM 2.0 Desktop framework consists of the following APIs:
+
+- App API
+  This provides an interface that initializes and aggregates functionality in the ‘ui’ and ‘core’ classes depending on the target client i.e. desktop client as a standalone app or QGIS plugin.
+
+- Core API
+  The API contains non-ui classes that provide base services such as data management, security, workflows, spatial operations, document services etc. including Custom exceptions.
+
+- UI API
+  The API contains ui classes, including widgets, that expose functionality provided by core classes.

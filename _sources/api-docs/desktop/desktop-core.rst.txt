@@ -8,4 +8,4 @@ Core Modules
    :maxdepth: 4
    :caption: core:
 
-   stdm.core
+..    stdm.core

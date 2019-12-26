@@ -38,7 +38,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Pull Request Workflow" href="community-pr-workflow.html" />
-    <link rel="prev" title="Unittest Examples" href="../unittests-docs/unittest-examples.html" /> 
+    <link rel="prev" title="Unittest" href="../unittests-docs/unittest-how-to-create.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -92,9 +92,10 @@
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../general/index.html">What is STDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/index.html#architecture">Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general/index.html#concepts">Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general/intro-whats-new.html">Whats new!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../general/intro-community.html">Get in touch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/intro-get-in-touch.html">Get in touch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general/intro-licensing.html">Licensing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started-faq.html">Frequently Asked Questions</a></li>
 </ul>
@@ -107,21 +108,18 @@
 <p class="caption"><span class="caption-text">Platforms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-desktop/introduction.html#architecture">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-desktop/introduction.html#description">Description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-online/introduction.html">STDM Online</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started-tutorial.html">Tutorials</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Developer's Guide</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../api-docs/api-introduction.html">API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modules.html">API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../recipes-docs/recipes-how-to-create.html">Recipes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../recipes-docs/recipes-examples.html">Recipes Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-how-to-create.html">Unittest</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-examples.html">Unittest Examples</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Community</span></p>
-<ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">How to Contribute</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#reporting-bugs">Reporting bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#documentation-policies">Documentation policies</a></li>
@@ -129,6 +127,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#submitting-patches">Submitting patches</a></li>
 </ul>
 </li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="community-pr-workflow.html">Pull Request Workflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="community-guidelines-code.html">Coding Guidelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="community-guidelines-gui.html">GUI Guidelines</a></li>
@@ -312,11 +313,13 @@ by running <code class="docutils literal notranslate"><span class="pre">git</spa
 with a name of the branch you want to create locally).
 See also: <a class="reference external" href="https://help.github.com/articles/checking-out-pull-requests-locally/#modifying-an-inactive-pull-request-locally">Modifying an inactive pull request locally</a>.</p>
 <p>When writing GitHub pull requests, try to keep titles short but descriptive.
-For example:
-| <strong>For bug #411: “STDM hangs if an exception raises in start_requests”</strong>
+For example:</p>
+<blockquote>
+<div><p>For bug <strong>#411: “STDM hangs if an exception raises in start_requests”</strong>
 prefer <strong>“Fix hanging when exception occurs in start_requests (#411)”</strong>
-instead of <strong>“Fix for #411”</strong>.
-| Complete titles make it easy to skim through the issue tracker.</p>
+instead of <strong>“Fix for #411”</strong>.</p>
+</div></blockquote>
+<p>Complete titles make it easy to skim through the issue tracker.</p>
 <p>Finally, try to keep aesthetic changes (<span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0008"><strong>PEP 8</strong></a> compliance, unused imports
 removal, etc) in separate commits from functional changes. This will make pull
 requests easier to review and more likely to get merged.</p>
@@ -334,7 +337,7 @@ requests easier to review and more likely to get merged.</p>
         <a href="community-pr-workflow.html" class="btn btn-neutral float-right" title="Pull Request Workflow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../unittests-docs/unittest-examples.html" class="btn btn-neutral float-left" title="Unittest Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../unittests-docs/unittest-how-to-create.html" class="btn btn-neutral float-left" title="Unittest" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

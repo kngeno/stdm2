@@ -8,4 +8,4 @@ GUI Modules
    :maxdepth: 4
    :caption: gui:
 
-   stdm.gui
+..    stdm.gui
