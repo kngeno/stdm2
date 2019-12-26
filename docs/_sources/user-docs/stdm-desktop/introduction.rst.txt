@@ -1,6 +1,8 @@
 STDM Desktop
-===================
+=================================
 
 .. toctree::
    :maxdepth: 1
    :name: toc-intro-stdm-desktop
+
+   introduction_desktop_architecture

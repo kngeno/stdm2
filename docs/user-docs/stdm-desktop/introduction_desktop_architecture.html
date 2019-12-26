@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>stdm.app.stdm_app module &mdash; STDM 2.0 2.0 documentation</title>
+  <title>Architecture &mdash; STDM 2.0 2.0 documentation</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="../../_static/_static/css/theme-color.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="stdm.core.security module" href="stdm.core.html" />
-    <link rel="prev" title="STDM Desktop" href="desktop-introduction.html" /> 
+    <link rel="next" title="STDM Mobile" href="../stdm-mobile/introduction.html" />
+    <link rel="prev" title="STDM Desktop" href="introduction.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -92,9 +92,10 @@
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../general/index.html">What is STDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/index.html#architecture">Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../general/index.html#concepts">Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../general/intro-whats-new.html">Whats new!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../general/intro-community.html">Get in touch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/intro-get-in-touch.html">Get in touch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../general/intro-licensing.html">Licensing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-faq.html">Frequently Asked Questions</a></li>
 </ul>
@@ -105,35 +106,26 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/stdm-online/getting-started-online.html">STDM online</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Platforms</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-online/introduction.html">STDM Online</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">STDM Desktop</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../stdm-mobile/introduction.html">STDM Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stdm-online/introduction.html">STDM Online</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-tutorial.html">Tutorials</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Developer's Guide</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../api-introduction.html">API</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="desktop-introduction.html">STDM Desktop</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">stdm.app.stdm_app module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="stdm.core.html">stdm.core.security module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="stdm.gui.html">stdm.gui package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="stdm.tests.html">stdm.tests package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="desktop-introduction.html#stdm-plugin-module">stdm.plugin module</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../mobile/mobile-introduction.html">STDM Mobile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../online/online-introduction.html">STDM Online</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api-docs/api-introduction.html">API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-how-to-create.html">Recipes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-examples.html">Recipes Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-how-to-create.html">Unittest</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-examples.html">Unittest Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../community/community-how-to-contribute.html">How to Contribute</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Community</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../community/community-how-to-contribute.html">How to Contribute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../community/community-pr-workflow.html">Pull Request Workflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../community/community-guidelines-code.html">Coding Guidelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../community/community-guidelines-gui.html">GUI Guidelines</a></li>
@@ -182,17 +174,15 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../api-introduction.html">API</a> &raquo;</li>
+          <li><a href="introduction.html">STDM Desktop</a> &raquo;</li>
         
-          <li><a href="desktop-introduction.html">STDM Desktop</a> &raquo;</li>
-        
-      <li>stdm.app.stdm_app module</li>
+      <li>Architecture</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/api-docs/desktop/stdm.app.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/user-docs/stdm-desktop/introduction_desktop_architecture.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -205,9 +195,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p>Subgroup: App</p>
-<div class="section" id="module-stdm.app.stdm_app">
-<span id="stdm-app-stdm-app-module"></span><h1>stdm.app.stdm_app module<a class="headerlink" href="#module-stdm.app.stdm_app" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="architecture">
+<span id="doc-introduction-desktop-archtecture"></span><h1>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../../_images/desktop_architecture.png"><img alt="STDM 2.0 Desktop Architecture" src="../../_images/desktop_architecture.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="description">
+<h1>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h1>
+<p>The STDM 2.0 Desktop framework consists of the following APIs:</p>
+<ul class="simple">
+<li><p>App API
+This provides an interface that initializes and aggregates functionality in the ‘ui’ and ‘core’ classes depending on the target client i.e. desktop client as a standalone app or QGIS plugin.</p></li>
+<li><p>Core API
+The API contains non-ui classes that provide base services such as data management, security, workflows, spatial operations, document services etc. including Custom exceptions.</p></li>
+<li><p>UI API
+The API contains ui classes, including widgets, that expose functionality provided by core classes.</p></li>
+</ul>
 </div>
 
 
@@ -218,10 +220,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="stdm.core.html" class="btn btn-neutral float-right" title="stdm.core.security module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../stdm-mobile/introduction.html" class="btn btn-neutral float-right" title="STDM Mobile" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="desktop-introduction.html" class="btn btn-neutral float-left" title="STDM Desktop" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="introduction.html" class="btn btn-neutral float-left" title="STDM Desktop" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

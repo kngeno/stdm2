@@ -7,4 +7,4 @@ Apps Modules
    :maxdepth: 4
    :caption: app:
 
-   stdm.app
+..    stdm.app

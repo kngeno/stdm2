@@ -8,3 +8,4 @@ STDM Desktop
 
    desktop-app
    desktop-core
+   desktop-gui

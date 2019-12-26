@@ -19,7 +19,7 @@ Table of Contents
 
    general/index
    general/intro-whats-new   
-   general/intro-community
+   general/intro-get-in-touch
    general/intro-licensing
    getting-started/getting-started-faq
 
@@ -51,15 +51,13 @@ Table of Contents
    recipes-docs/recipes-how-to-create
    recipes-docs/recipes-examples
    unittests-docs/unittest-how-to-create
-   unittests-docs/unittest-examples
-
+   community/community-how-to-contribute
 
 .. toctree::
    :maxdepth: 4
    :glob:
    :caption: Community
 
-   community/community-how-to-contribute
    community/community-pr-workflow
    community/community-guidelines-code
    community/community-guidelines-gui

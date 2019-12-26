@@ -23,12 +23,13 @@ Please enforce these guidelines when refactoring code:
    - Either import the individual module names e.g. from PyQt4.QtGui import QWidget 
    - Import the whole package and use the namespace to reference a module such as:
 
-    ::
+  .. code-block:: python
+
     from PyQt4 import QtGui
     Widget = QtGui.QWidget
 
 
-    Imports should be made in the following order:
+  Imports should be made in the following order:
 
     -    Standard library/Core Python imports e.g. import sys
     -    Third party imports e.g. from PyQt4.QtCore import QObject
