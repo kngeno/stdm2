@@ -1,0 +1,141 @@
+sudo: false
+services: 
+  - docker
+
+language: python
+
+python: 
+  - '3.6'
+
+git:
+  depth: false
+
+addons:
+  apt:
+    packages:
+      - docker-ce
+
+env:
+  global:
+    - QGIS_IMAGE=qgis/qgis
+    - QGIS_VERSION_TAG=final-3_4_4
+    - PLUGIN_NAME=stdm
+    - PG_IMAGE=gkahiu/docker-postgis-stdm
+    - PG_VERSION_TAG=10
+    - DOCKER_QGIS_TEST_DIR=tests_directory
+
+matrix:
+  include:
+    - python: '3.6'
+
+before_install:   
+  # - docker version
+  # - docker-compose version
+  # - docker-compose up -d
+  # - docker-compose ps
+  # - sleep 10
+  # - docker-compose exec qgis-testing-environment sh -c "qgis_setup.sh ${PLUGIN_NAME}"
+  # - docker-compose exec qgis-testing-environment sh -c "pip3 install -r /${DOCKER_QGIS_TEST_DIR}/requirements.txt"
+
+install: 
+  # requirements
+  - pip3 install -U pip;
+  - pip3 install -r requirements.txt;
+
+before_script:
+  - black --check stdm/ > /dev/null || echo "Persistent reformat" # --exit-zero
+  - git diff -U0 $TRAVIS_COMMIT_RANGE | black --target-version py36 -l 79 stdm/ --diff # autoformat to pep8
+  - num_errors_before=`find . -name \*.py -exec pycodestyle --ignore=E402,W503 {} + | wc -l`
+  - echo $num_errors_before
+  - cd "$TRAVIS_BUILD_DIR"
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "Travis Cli"
+  - git checkout $TRAVIS_BRANCH
+  - find . -name \*.py -exec autopep8 --recursive --aggressive --aggressive --in-place {} +
+  - find . -name '*.py' -exec autopep8 --in-place --recursive --max-line-length=79 {} +
+  - num_errors_after=`find . -name \*.py -exec pycodestyle --ignore=E402, W503 {} + | wc -l`
+  - echo -e $num_errors_after
+  - |
+      if (( $num_errors_after < $num_errors_before )); then  > /dev/null || echo "Pep8 not fixed"
+          git commit -a -m "PEP-8 Fix"
+          git push -fq --repo https://$USER_NAME:$USER_PASSWORD@github.com/kngeno/stdm2.git origin  # --quiet
+      fi
+  # Lists the remaining errors - these will have to be fixed manually
+  # - pycodestyle --ignore=E402,W503 stdm/
+  # - pycodestyle --statistics -qq --ignore=E501,E731,E12,W503 stdm/
+
+script:
+  # - docker-compose exec qgis-testing-environment sh -c "cd /${DOCKER_QGIS_TEST_DIR}"  # docker tests
+  # - docker-compose exec qgis-testing-environment sh -c "black --check stdm" # failed - no stdm directory  # docker tests
+  # - docker-compose exec qgis-testing-environment sh -c "qgis_testrunner.sh stdm.tests.test_plugin"  # docker tests
+  - coverage run stdm/tests/ > /dev/null || echo "Coverage tests failed" # coverage test
+  - coverage report -m > /dev/null || echo "Coverage report failed" # create coverage report
+
+after_success:
+  - |
+    if [[ $TRAVIS_BRANCH == "master" ]]; then
+      coveralls;
+      echo "branch true";
+    else
+      [[ $TRAVIS_BRANCH != "master" && $TRAVIS_TAG == true]];
+      coveralls;
+      echo "tag true";
+    fi
+  
+before_deploy:
+  - chmod +x -R scripts/
+
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    github_token: $STDM_TOKEN  # Set in the settings page of your repository, as a secure variable
+    keep_history: true
+    local_dir: docs # The folder that needs to be deployed
+    repo: kngeno/stdm2 # Add your username/project_name here
+    target_branch: gh-pages # Tell Travis to deploy on the gh-pages branch
+    on:
+      branch: master
+
+  - provider: script
+    script: bash scripts/deploy_skip.sh
+    skip_cleanup: true
+    on:
+      branch: master
+
+  - provider: script
+    script: bash scripts/deploy_master.sh
+    skip_cleanup: true
+    on:
+      branch: master
+      condition: $TRAVIS_PULL_REQUEST = false
+  
+  - provider: script
+    script: bash scripts/deploy_tags.sh
+    skip_cleanup: true
+    on:
+      tags: true
+      branch: master
+      
+  - provider: releases
+    user: $USER
+    password: $PASSWORD
+    file:
+      - stdm_*.tar.gz
+      - stdm_*.zip
+    
+    file_glob: true
+    skip_cleanup: true
+    on:
+      tags: true
+      branch: master
+
+after_deploy:
+  - ls -lah stdm_*.tar.gz stdm_*.zip
+
+notifications: 
+  email: 
+    on_failure: never #always
+    on_success: never #always
+    recipients: 
+      - kngeno.kevin@gmail.com # add user group email/ communication channels
+

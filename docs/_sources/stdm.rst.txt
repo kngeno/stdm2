@@ -1,0 +1,32 @@
+STDM Desktop
+=================================
+
+Sub Packages
+---------------------------------
+
+.. toctree::
+
+    stdm.app
+    stdm.core
+    stdm.gui
+    stdm.tests
+
+Sub Modules
+----------------------------------
+
+stdm.plugin module
+----------------------------------
+
+.. automodule:: stdm.plugin
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: stdm
+    :members:
+    :undoc-members:
+    :show-inheritance:

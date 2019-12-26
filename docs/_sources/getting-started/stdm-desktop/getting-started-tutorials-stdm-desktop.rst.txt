@@ -1,0 +1,9 @@
+.. _doc_getting_started_tutorials_desktop:
+
+
+STDM Desktop
+===============================
+
+.. toctree::
+   :maxdepth: 2
+   :name: getting_started_tutorials_desktop

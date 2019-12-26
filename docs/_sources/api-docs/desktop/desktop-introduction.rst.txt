@@ -1,0 +1,10 @@
+.. _desktop_introduction:
+
+STDM Desktop
+=================================
+
+.. toctree::
+   :maxdepth: 2
+
+   desktop-app
+   desktop-core

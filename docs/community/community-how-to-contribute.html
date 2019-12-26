@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to Contribute &mdash; STDM 2.0 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/_static/css/theme-color.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Pull Request Workflow" href="community-pr-workflow.html" />
+    <link rel="prev" title="Unittest Examples" href="../unittests-docs/unittest-examples.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> STDM 2.0
+          
+
+          
+            
+            <img src="../_static/STDM_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/index.html">What is STDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/index.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/intro-whats-new.html">Whats new!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/intro-community.html">Get in touch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/intro-licensing.html">Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started-faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/stdm-desktop/getting-started-desktop.html">STDM Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/stdm-mobile/getting-started-mobile.html">STDM Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/stdm-online/getting-started-online.html">STDM online</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platforms</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-docs/stdm-online/introduction.html">STDM Online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started-tutorial.html">Tutorials</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer's Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api-docs/api-introduction.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recipes-docs/recipes-how-to-create.html">Recipes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recipes-docs/recipes-examples.html">Recipes Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-how-to-create.html">Unittest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unittests-docs/unittest-examples.html">Unittest Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to Contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#reporting-bugs">Reporting bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation-policies">Documentation policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-patches">Writing patches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#submitting-patches">Submitting patches</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="community-pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community-guidelines-code.html">Coding Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community-guidelines-gui.html">GUI Guidelines</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">STDM 2.0</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>How to Contribute</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/community/community-how-to-contribute.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-contribute">
+<span id="doc-community-how-to-contribute"></span><h1>How to Contribute<a class="headerlink" href="#how-to-contribute" title="Permalink to this headline">¶</a></h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Double check that you are reading the most recent version of this document at
+<a class="reference external" href="https://gltn.github.io/stdm2/contributing.html">Contributing</a></p>
+</div>
+<p>There are many ways to contribute to STDM. Here are some of them:</p>
+<ul class="simple">
+<li><p>Blog about STDM 2.0. Tell the world how you’re using STDM 2.0. This will help
+getting new patners/newcomers with more profiles/examples and will help the STDM 2.0 project to increase its
+visibility.</p></li>
+<li><p>Report bugs and request features in the <a class="reference external" href="https://github.com/gltn/stdm2/issues">issue tracker</a>, trying to follow
+the guidelines detailed in <a class="reference internal" href="#reporting-bugs">Reporting bugs</a> below.</p></li>
+<li><p>Submit patches for new functionalities and/or bug fixes. Please read
+<a class="reference internal" href="#writing-patches"><span class="std std-ref">Writing patches</span></a> and <a class="reference internal" href="#id3">Submitting patches</a> below for details on how to
+write and submit a patch.</p></li>
+<li><p>Join the <a class="reference external" href="http://lists.osgeo.org/cgi-bin/mailman/listinfo/stdm-user">STDM 2.0 mailing list</a> and share your ideas on how to
+improve STDM 2.0. We’re always open to suggestions.</p></li>
+</ul>
+<div class="section" id="reporting-bugs">
+<h2>Reporting bugs<a class="headerlink" href="#reporting-bugs" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please report security issues <strong>only</strong> to
+[email address]. This is a private list only open to
+trusted STDM developers, and its archives are not public.</p>
+</div>
+<p>Well-written bug reports are very helpful, so keep in mind the following
+guidelines when you’re going to report a new bug.</p>
+<ul class="simple">
+<li><p>Check the <a class="reference external" href="https://github.com/gltn/stdm2/issues/">GitHub Issues</a> to see if the issue has already been reported. If it
+has, don’t dismiss the report, but check the ticket history and comments. If
+you have additional useful information, please leave a comment, or consider
+<a class="reference internal" href="community-pr-workflow.html#doc-community-pr-workflow"><span class="std std-ref">Pull Request Workflow</span></a> with a fix.</p></li>
+<li><p>Search the <a class="reference external" href="http://lists.osgeo.org/cgi-bin/mailman/listinfo/stdm-dev/">OSGEO STDM Issues</a> list to see if it has
+been discussed there, or if you’re not sure if what you’re seeing is a bug.</p></li>
+<li><p>Write <strong>complete, reproducible, specific bug reports</strong>. The smaller the test
+case, the better. Remember that other developers won’t have your project to
+reproduce the bug, so please include all relevant files required to reproduce
+it. See for example StackOverflow’s guide on creating a
+<a class="reference external" href="https://stackoverflow.com/help/mcve">Minimal, Complete, and Verifiable example</a> exhibiting the issue.</p></li>
+<li><p>The most awesome way to provide a complete reproducible example is to
+send a pull request which adds a failing test case to the
+STDM testing suite (see <a class="reference internal" href="#submitting-patches"><span class="std std-ref">Submitting patches</span></a>).
+This is helpful even if you don’t have an intention to
+fix the issue yourselves.</p></li>
+<li><p>Include the <strong>STDM version</strong> so developers working on your bug
+know exactly which version and platform it occurred on, which is often very
+helpful for reproducing it, or knowing if it was already fixed.</p></li>
+</ul>
+</div>
+<div class="section" id="documentation-policies">
+<span id="id1"></span><h2>Documentation policies<a class="headerlink" href="#documentation-policies" title="Permalink to this headline">¶</a></h2>
+<p>For reference documentation of API members (classes, methods, etc.) use
+docstrings and make sure that the Sphinx documentation uses the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html">autodoc</a>
+extension to pull the docstrings. API reference documentation should follow
+docstring conventions (<a class="reference external" href="https://www.python.org/dev/peps/pep-0257/">PEP 257</a>) and be IDE-friendly: short, to the point,
+and it may provide short examples.</p>
+<p>Other types of documentation, such as tutorials or topics, should be covered in
+files within the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory. This includes documentation that is
+specific to an API member, but goes beyond API reference documentation.</p>
+<p>In any case, if something is covered in a docstring, use the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html">autodoc</a>
+extension to pull the docstring into the documentation instead of duplicating
+the docstring in files within the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory.</p>
+</div>
+<div class="section" id="writing-patches">
+<span id="id2"></span><h2>Writing patches<a class="headerlink" href="#writing-patches" title="Permalink to this headline">¶</a></h2>
+<p>The better a patch is written, the higher the chances that it’ll get accepted and the sooner it will be merged.</p>
+<p>Well-written patches should:</p>
+<ul class="simple">
+<li><p>contain the minimum amount of code required for the specific change. Small
+patches are easier to review and merge. So, if you’re doing more than one
+change (or bug fix), please consider submitting one patch per change. Do not
+collapse multiple changes into a single patch. For big changes consider using
+a patch queue.</p></li>
+<li><p>pass all unit-tests. See <a class="reference internal" href="../unittests-docs/unittest-how-to-create.html#running-tests"><span class="std std-ref">Running tests</span></a> below.</p></li>
+<li><p>include one (or more) test cases that check the bug fixed or the new
+functionality added. See <a class="reference internal" href="../unittests-docs/unittest-how-to-create.html#writing-tests"><span class="std std-ref">Writing tests using Unittest</span></a> below.</p></li>
+<li><p>if you’re adding or changing a public (documented) API, please include
+the documentation changes in the same patch.  See <a class="reference internal" href="#id1">Documentation policies</a>
+below.</p></li>
+<li><p>if you’re adding a private API, please add a regular expression to the
+<code class="docutils literal notranslate"><span class="pre">coverage_ignore_pyobjects</span></code> variable of <code class="docutils literal notranslate"><span class="pre">docs/conf.py</span></code> to exclude the new
+private API from documentation coverage checks.</p></li>
+</ul>
+</div>
+<div class="section" id="submitting-patches">
+<span id="id3"></span><h2>Submitting patches<a class="headerlink" href="#submitting-patches" title="Permalink to this headline">¶</a></h2>
+<p>The best way to submit a patch is to issue a <a class="reference external" href="https://help.github.com/en/articles/creating-a-pull-request">pull request</a> on GitHub,
+optionally creating a new issue first.</p>
+<p>Remember to explain what was fixed or the new functionality (what it is, why
+it’s needed, etc). The more info you include, the easier will be for core
+developers to understand and accept your patch.</p>
+<p>You can also discuss the new functionality (or bug fix) before creating the
+patch, but it’s always good to have a patch ready to illustrate your arguments
+and show that you have put some additional thought into the subject. A good
+starting point is to send a pull request on GitHub. It can be simple enough to
+illustrate your idea, and leave documentation/tests for later, after the idea
+has been validated and proven useful.</p>
+<p>Sometimes there is an existing pull request for the problem you’d like to
+solve, which is stalled for some reason. Often the pull request is in a
+right direction, but changes are requested by STDM maintainers, and the
+original pull request author hasn’t had time to address them.
+In this case consider picking up this pull request: <code class="docutils literal notranslate"><span class="pre">open</span></code>
+a new pull request with all commits from the original pull request, as well as
+additional changes to address the raised issues. Doing so helps a lot; it is
+not considered rude as soon as the original author is acknowledged by keeping
+his/her commits.</p>
+<p>You can pull an existing pull request to a local branch
+by running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">upstream</span> <span class="pre">pull/$PR_NUMBER/head:$BRANCH_NAME_TO_CREATE</span></code>
+(replace ‘upstream’ with a remote name for STDM repository,
+<code class="docutils literal notranslate"><span class="pre">$PR_NUMBER</span></code> with an ID of the pull request, and <code class="docutils literal notranslate"><span class="pre">$BRANCH_NAME_TO_CREATE</span></code>
+with a name of the branch you want to create locally).
+See also: <a class="reference external" href="https://help.github.com/articles/checking-out-pull-requests-locally/#modifying-an-inactive-pull-request-locally">Modifying an inactive pull request locally</a>.</p>
+<p>When writing GitHub pull requests, try to keep titles short but descriptive.
+For example:
+| <strong>For bug #411: “STDM hangs if an exception raises in start_requests”</strong>
+prefer <strong>“Fix hanging when exception occurs in start_requests (#411)”</strong>
+instead of <strong>“Fix for #411”</strong>.
+| Complete titles make it easy to skim through the issue tracker.</p>
+<p>Finally, try to keep aesthetic changes (<span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0008"><strong>PEP 8</strong></a> compliance, unused imports
+removal, etc) in separate commits from functional changes. This will make pull
+requests easier to review and more likely to get merged.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="community-pr-workflow.html" class="btn btn-neutral float-right" title="Pull Request Workflow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../unittests-docs/unittest-examples.html" class="btn btn-neutral float-left" title="Unittest Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, UN-HABITAT
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXX-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

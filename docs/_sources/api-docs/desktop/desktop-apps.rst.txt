@@ -1,0 +1,10 @@
+.. _desktop_apps:
+
+Apps Modules
+================================
+
+.. toctree::
+   :maxdepth: 4
+   :caption: app:
+
+   stdm.app

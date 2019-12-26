@@ -1,0 +1,12 @@
+.. _doc_api_stdm_desktop:
+
+
+API
+=================================
+
+.. toctree::
+   :maxdepth: 4
+   :name: api_stdm_desktop
+
+   stdm
+   online
