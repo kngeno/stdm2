@@ -1,11 +1,8 @@
 .. _desktop_gui:
 
-GUI Modules
+GUI
 ================================
 
-
 .. toctree::
-   :maxdepth: 4
-   :caption: gui:
 
-..    stdm.gui
+    stdm.gui

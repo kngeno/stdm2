@@ -30,6 +30,82 @@ How do you create STDM Cookbook Recipes?
 * Document the STDM recipe :ref:`doc_community_guidelines_code` 
 
 
+Examples
+--------------------------------
+
+
+Creating Vector Layers
+................................
+
+There are several ways to generate a vector layer dataset:
+
+- The ``QgsVectorFileWriter`` class: A convenient class for writing vector files to disk, using either a 
+  static call to ``writeAsVectorFormat()`` which saves the whole vector layer or creating an instance of the 
+  class and issue calls to ``addFeature()``. This class supports all the vector formats that OGR supports 
+  (``GeoPackage, Shapefile, GeoJSON, KML`` and others).
+
+- The ``QgsVectorLayer`` class: instantiates a data provider that interprets the supplied path (url) of the 
+  data source to connect to and access the data. It can be used to create temporary, memory-based layers (``memory``) 
+  and connect to OGR datasets (``ogr``), databases (``postgres, spatialite, mysql, mssql``) and more 
+  (``wfs, gpx, delimitedtext…``).
+
+
+* From an instance of QgsVectorFileWriter
+
+.. code-block::
+    :caption: Creating Vector Layers
+    :name: create_vectorfilewriter.py
+
+    # Write to a GeoPackage (default)
+    error = QgsVectorFileWriter.writeAsVectorFormat(layer, "/path/to/folder/my_data", "")
+    if error[0] == QgsVectorFileWriter.NoError:
+        print("success!")
+
+    # Write to an ESRI Shapefile format dataset using UTF-8 text encoding
+    error = QgsVectorFileWriter.writeAsVectorFormat(layer, "/path/to/folder/my_esridata",
+                                                    "UTF-8", driverName="ESRI Shapefile")
+    if error[0] == QgsVectorFileWriter.NoError:
+        print("success again!")
+
+
+*  From an instance of QgsVectorLayer
+
+.. code-block::
+    :caption: Creating Vector Layers
+    :name: create_vectorlayer.py
+
+    from qgis.PyQt.QtCore import QVariant
+
+    # define fields for feature attributes. A QgsFields object is needed
+    fields = QgsFields()
+    fields.append(QgsField("first", QVariant.Int))
+    fields.append(QgsField("second", QVariant.String))
+
+    """ create an instance of vector file writer, which will create the vector file.
+    Arguments:
+    1. path to new file (will fail if exists already)
+    2. encoding of the attributes
+    3. field map
+    4. geometry type - from WKBTYPE enum
+    5. layer's spatial reference (instance of
+    QgsCoordinateReferenceSystem) - optional
+    6. driver name for the output file """
+
+    writer = QgsVectorFileWriter("my_shapes.shp", "UTF-8", fields, QgsWkbTypes.Point, driverName="ESRI Shapefile")
+
+    if writer.hasError() != QgsVectorFileWriter.NoError:
+        print("Error when creating shapefile: ",  w.errorMessage())
+
+    # add a feature
+    fet = QgsFeature()
+
+    fet.setGeometry(QgsGeometry.fromPointXY(QgsPointXY(10,10)))
+    fet.setAttributes([1, "text"])
+    writer.addFeature(fet)
+
+    # delete the writer to flush features to disk
+    del writer
+
 
 .. history
 .. authors
