@@ -49,7 +49,6 @@ Table of Contents
    
    api-docs/api-introduction
    recipes-docs/recipes-how-to-create
-   recipes-docs/recipes-examples
    unittests-docs/unittest-how-to-create
    community/community-how-to-contribute
 

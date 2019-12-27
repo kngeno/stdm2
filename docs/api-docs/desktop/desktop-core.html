@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Core Modules &mdash; STDM 2.0 2.0 documentation</title>
+  <title>Core &mdash; STDM 2.0 alpha documentation</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="../../_static/_static/css/theme-color.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="GUI Modules" href="desktop-gui.html" />
-    <link rel="prev" title="Apps Modules" href="desktop-app.html" /> 
+    <link rel="next" title="stdm.core" href="stdm.core.html" />
+    <link rel="prev" title="stdm.app" href="stdm.app.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -108,8 +108,6 @@
 <p class="caption"><span class="caption-text">Platforms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html#architecture">Architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-desktop/introduction.html#description">Description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../user-docs/stdm-online/introduction.html">STDM Online</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started-tutorial.html">Tutorials</a></li>
@@ -118,11 +116,12 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../api-introduction.html">API</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="desktop-introduction.html">STDM Desktop</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="desktop-app.html">Apps Modules</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Core Modules</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="desktop-app.html">App</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Core</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="stdm.core.html">stdm.core</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="desktop-gui.html">GUI Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="desktop-gui.html">GUI</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../mobile/mobile-introduction.html">STDM Mobile</a></li>
@@ -130,12 +129,11 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-how-to-create.html">Recipes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../recipes-docs/recipes-examples.html">Recipes Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../unittests-docs/unittest-how-to-create.html">Unittest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../community/community-how-to-contribute.html">How to Contribute</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Community</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../community/community-how-to-contribute.html">How to Contribute</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../community/community-pr-workflow.html">Pull Request Workflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../community/community-guidelines-code.html">Coding Guidelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../community/community-guidelines-gui.html">GUI Guidelines</a></li>
@@ -188,7 +186,7 @@
         
           <li><a href="desktop-introduction.html">STDM Desktop</a> &raquo;</li>
         
-      <li>Core Modules</li>
+      <li>Core</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -207,9 +205,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="core-modules">
-<span id="desktop-core"></span><h1>Core Modules<a class="headerlink" href="#core-modules" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="core">
+<span id="desktop-core"></span><h1>Core<a class="headerlink" href="#core" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="stdm.core.html">stdm.core</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="stdm.core.html#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 
@@ -221,10 +225,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="desktop-gui.html" class="btn btn-neutral float-right" title="GUI Modules" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="stdm.core.html" class="btn btn-neutral float-right" title="stdm.core" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="desktop-app.html" class="btn btn-neutral float-left" title="Apps Modules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="stdm.app.html" class="btn btn-neutral float-left" title="stdm.app" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

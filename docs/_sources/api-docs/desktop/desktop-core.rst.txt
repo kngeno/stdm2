@@ -1,11 +1,8 @@
 .. _desktop_core:
 
-Core Modules
+Core
 ================================
 
-
 .. toctree::
-   :maxdepth: 4
-   :caption: core:
 
-..    stdm.core
+    stdm.core

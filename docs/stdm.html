@@ -1,0 +1,424 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>stdm package &mdash; STDM 2.0 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="_static/_static/css/theme-color.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> STDM 2.0
+          
+
+          
+            
+            <img src="_static/STDM_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="general/index.html">What is STDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/index.html#architecture">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/index.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/intro-whats-new.html">Whats new!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/intro-get-in-touch.html">Get in touch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/intro-licensing.html">Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/getting-started-faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/stdm-desktop/getting-started-desktop.html">STDM Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/stdm-mobile/getting-started-mobile.html">STDM Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/stdm-online/getting-started-online.html">STDM online</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platforms</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user-docs/stdm-desktop/introduction.html">STDM Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-docs/stdm-mobile/introduction.html">STDM Mobile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-docs/stdm-online/introduction.html">STDM Online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/getting-started-tutorial.html">Tutorials</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer's Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api-docs/api-introduction.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recipes-docs/recipes-how-to-create.html">Recipes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unittests-docs/unittest-how-to-create.html">Unittest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community/community-how-to-contribute.html">How to Contribute</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="community/community-pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community/community-guidelines-code.html">Coding Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community/community-guidelines-gui.html">GUI Guidelines</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">STDM 2.0</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>stdm package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/stdm.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="stdm-package">
+<h1>stdm package<a class="headerlink" href="#stdm-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="stdm.app.html">stdm.app package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="stdm.app.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdm.app.html#module-stdm.app.stdm_app">stdm.app.stdm_app module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdm.app.html#module-stdm.app">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="stdm.core.html">stdm.core package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="stdm.core.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdm.core.html#module-stdm.core.security">stdm.core.security module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdm.core.html#module-stdm.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="stdm.gui.html">stdm.gui package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="stdm.gui.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdm.gui.html#module-stdm.gui.module">stdm.gui.module module</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stdm.gui.html#module-stdm.gui">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="stdm.tests.html">stdm.tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="stdm.tests.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="stdm.tests.gui.html">stdm.tests.gui package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="stdm.tests.gui.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stdm.tests.gui.html#module-stdm.tests.gui.custom_modules">stdm.tests.gui.custom_modules module</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="stdm.tests.gui.html#stdm-tests-gui-test-stdm-module-module">stdm.tests.gui.test_stdm_module module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stdm.tests.gui.html#stdm-tests-gui-tests-module">stdm.tests.gui.tests module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stdm.tests.gui.html#module-stdm.tests.gui">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stdm.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdm.tests.html#stdm-tests-test-plugin-module">stdm.tests.test_plugin module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdm.tests.html#module-stdm.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-stdm.plugin">
+<span id="stdm-plugin-module"></span><h2>stdm.plugin module<a class="headerlink" href="#module-stdm.plugin" title="Permalink to this headline">¶</a></h2>
+<p>/<strong>***********************************************************************</strong>
+Name                 : STDM QGIS Loader
+Description          : STDM QGIS Loader
+Date                 : 04-01-2015
+copyright            : (C) 2015 by UN-Habitat and implementing partners.</p>
+<blockquote>
+<div><p>See the accompanying file CONTRIBUTORS.txt in the root</p>
+</div></blockquote>
+<dl>
+<dt>email<span class="classifier"><a class="reference external" href="mailto:stdm&#37;&#52;&#48;unhabitat&#46;org">stdm<span>&#64;</span>unhabitat<span>&#46;</span>org</a></span></dt><dd><p><strong>***********************************************************************</strong>/</p>
+</dd>
+<dt>/<strong>***********************************************************************</strong></dt><dd><ul class="simple">
+<li><ul>
+<li></li>
+</ul>
+</li>
+<li><p>This program is free software; you can redistribute it and/or modify  *</p></li>
+<li><p>it under the terms of the GNU General Public License as published by  *</p></li>
+<li><p>the Free Software Foundation; either version 2 of the License, or     *</p></li>
+<li><p>(at your option) any later version.                                   *</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<p><strong>***********************************************************************</strong>/</p>
+</dd>
+</dl>
+<dl class="class">
+<dt id="stdm.plugin.STDMQGISLoader">
+<em class="property">class </em><code class="descclassname">stdm.plugin.</code><code class="descname">STDMQGISLoader</code><span class="sig-paren">(</span><em>iface</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdm/plugin.html#STDMQGISLoader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdm.plugin.STDMQGISLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-center">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#stdm.plugin.STDMQGISLoader.initGui" title="stdm.plugin.STDMQGISLoader.initGui"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initGui</span></code></a>(self)</p></td>
+<td><p>Create the menu entries and toolbar icons inside the QGIS GUI.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#stdm.plugin.STDMQGISLoader.unload" title="stdm.plugin.STDMQGISLoader.unload"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unload</span></code></a>(self)</p></td>
+<td><p>Removes the plugin menu item and icon from QGIS GUI.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 59%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>run</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="stdm.plugin.STDMQGISLoader.initGui">
+<code class="descname">initGui</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdm/plugin.html#STDMQGISLoader.initGui"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdm.plugin.STDMQGISLoader.initGui" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the menu entries and toolbar icons inside the QGIS GUI.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdm.plugin.STDMQGISLoader.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdm/plugin.html#STDMQGISLoader.run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdm.plugin.STDMQGISLoader.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdm.plugin.STDMQGISLoader.unload">
+<code class="descname">unload</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdm/plugin.html#STDMQGISLoader.unload"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdm.plugin.STDMQGISLoader.unload" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the plugin menu item and icon from QGIS GUI.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-stdm.resources">
+<span id="stdm-resources-module"></span><h2>stdm.resources module<a class="headerlink" href="#module-stdm.resources" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="stdm.resources.qCleanupResources">
+<code class="descclassname">stdm.resources.</code><code class="descname">qCleanupResources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdm/resources.html#qCleanupResources"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdm.resources.qCleanupResources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="stdm.resources.qInitResources">
+<code class="descclassname">stdm.resources.</code><code class="descname">qInitResources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdm/resources.html#qInitResources"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdm.resources.qInitResources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-stdm">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-stdm" title="Permalink to this headline">¶</a></h2>
+<p>/<strong>***********************************************************************</strong>
+Name                 : Social Tenure Domain Model
+Description          : QGIS Entry Point for Social Tenure Domain Model
+Date                 : 04-01-2015
+copyright            : (C) 2015 by UN-Habitat and implementing partners.</p>
+<blockquote>
+<div><p>See the accompanying file CONTRIBUTORS.txt in the root</p>
+</div></blockquote>
+<dl>
+<dt>email<span class="classifier"><a class="reference external" href="mailto:stdm&#37;&#52;&#48;unhabitat&#46;org">stdm<span>&#64;</span>unhabitat<span>&#46;</span>org</a></span></dt><dd><p><strong>***********************************************************************</strong>/</p>
+</dd>
+<dt>/<strong>***********************************************************************</strong></dt><dd><ul class="simple">
+<li><ul>
+<li></li>
+</ul>
+</li>
+<li><p>This program is free software; you can redistribute it and/or modify  *</p></li>
+<li><p>it under the terms of the GNU General Public License as published by  *</p></li>
+<li><p>the Free Software Foundation; either version 2 of the License, or     *</p></li>
+<li><p>(at your option) any later version.                                   *</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<p><strong>***********************************************************************</strong>/</p>
+</dd>
+</dl>
+<dl class="function">
+<dt id="stdm.classFactory">
+<code class="descclassname">stdm.</code><code class="descname">classFactory</code><span class="sig-paren">(</span><em>iface</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdm.html#classFactory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdm.classFactory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load STDMQGISLoader class.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, UN-HABITAT
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXX-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

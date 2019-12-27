@@ -1,0 +1,27 @@
+stdm.core
+=================
+
+Classes
+---------------
+
+.. autoclass:: stdm.core.security.PermissionInfo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+    .. rubric:: Methods
+
+    .. autoautosummary:: stdm.core.security.PermissionInfo
+        :methods:
+        :nosignatures:
+
+    .. rubric:: Signals
+
+    .. autoautosummary:: stdm.core.security.PermissionInfo
+        :signals:
+        :nosignatures:
+
+    .. rubric:: Attributes
+
+    .. autoautosummary:: stdm.core.security.PermissionInfo
+        :attributes:
