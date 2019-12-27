@@ -1,5 +1,5 @@
 """
-/***************************************************************************
+/***************************************************************************/
 
 Name                 : Security module
 Description          : Exposes various functionality for managing users,
@@ -13,7 +13,7 @@ email                : stdm@unhabitat.org
 
 ***************************************************************************/
 
-/***************************************************************************
+/***************************************************************************/
 
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -25,7 +25,6 @@ email                : stdm@unhabitat.org
 
 
 class PermissionInfo(object):
-    """
-    Permission information object.
+    """ Permission information object.
     """
     pass

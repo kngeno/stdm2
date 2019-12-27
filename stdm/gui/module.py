@@ -1,5 +1,5 @@
 """
-/***************************************************************************
+/***************************************************************************/
 
 Name                 : STDM Module
 Description          : Abstract container that contains information for
@@ -26,8 +26,8 @@ email                : stdm@unhabitat.org
 from abc import ABC, abstractmethod
 from PyQt5.QtGui import QIcon
 
-from PyQt.QtWidgets import QAction
-from qgis.gui import QgisInterface
+from PyQt5.QtWidgets import QAction
+# from qgis.gui import QgisInterface
 from stdm.core.security import PermissionInfo
 
 
@@ -54,9 +54,9 @@ def create_qaction(stdm_module):
 
 
 class StdmModule(ABC):
-    """Abstract class containing specific information for an STDM module e.g.
+    """
+    Abstract class containing specific information for an STDM module e.g.
     Data Profile Customization module, Users and Roles module etc.
-
     Requires to be sub-classed for specific modules.
     """
 
@@ -64,7 +64,8 @@ class StdmModule(ABC):
     qaction_creator = create_qaction
 
     def __init__(self, iface):
-        """Class constructor.
+        """
+        Class constructor.
         :param iface: Reference to QGIS interface exposing QGisApp. See
         :class: qgis.gui.QgisInterface
         :type iface: QgisInterface
@@ -101,8 +102,8 @@ class StdmModule(ABC):
     @abstractmethod
     def icon(self):
         """
-        :return: Returns the QIcon corresponding to the module. Needs
-        to be overridden by sub-classes.
+        :return: Returns the QIcon corresponding to the module.
+        Needs to be overridden by sub-classes.
         :rtype: QIcon
         """
         raise NotImplementedError
@@ -114,7 +115,6 @@ class StdmModule(ABC):
         :return: Returns the friendly display name of the module that will
         appear in the menu and/or action tooltip in the corresponding action.
         This should be translatable text.
-
         Should be overridden by sub-classes.
         :rtype: str
         """
@@ -125,7 +125,7 @@ class StdmModule(ABC):
     def key(cls):
         """
         :return: Returns a unique name that identifies this module. It can,
-        for instance, be a code or shortened display name.
+        for instance, be a code or shortened display name.\
         Should be overridden by sub-classes.
         :rtype: str
         """
